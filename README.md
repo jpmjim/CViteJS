@@ -139,3 +139,38 @@ Curso de Vite.js
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
   ```
+
+## Boilerplate de Vite
+  - Todas las configuraciones las podemos realizar en el archivo [vite.config.js](https://vitejs.dev/config/)
+  - El punto de acceso por defecto es index.html pero podemos cambiar para que sea un .html, .js, .ts
+  - En el archivo punto package.json tenemos los scripts iniciales del proyecto
+  - $npm run dev Levanta el servidor en desarrollo
+  - $npm run build Genera la carpeta /dist donde están los archivos para prod
+  - $npm run preview Levanta un servidor que nos permite ver el proyecto generado en /dist
+  - Cuando vemos el proyecto renderizado en el navegador podemos observar que agrega un parametro que indica en timestamp que representa el momento cuando fue generado.
+    ```html
+      <script type=”module” src=”/main.jst=2345676344”><script>
+    ```
+  - Esto tiene relación a que los archivos están en el cache el navegador y para renderizar los cambios necesitamos que sean refrescados
+
+  - **Para forzar el limpiado de la cache**
+  
+    Importante resaltar que puede llegar a ser necesario FORZAR LIMPIAR LA CACHE PARA PODER VER LOS CAMBIOS
+
+    Debemos seguir los pasos:
+      - Click en los tres puntos superiores del navegador
+      - “Más herramientas”/”Herramientas del desarrollador”/”Application”/Storage”
+      - Marcar el check de “Cache”/”Cache storage”
+      - Click en “Clear site data”
+    
+    o tambien:
+      - Click derecho
+      - Inspeccionar”/”Application”/Storage”
+      - Marcar el check de “Cache”/”Cache storage”
+      - Click en “Clear site data”
+
+  - Interesante ver el archivo style.css no es un archivo css normal. Cómo se hablo anteriormente Vite convierte todos los archivos en un archivo ECMAScript Module para usarlo de manera universal.
+
+  - El svg que se menciona en el curso se encuentra en la carpeta public
+  - Esta carpeta public sirve para obtener cualquier archivo disponible a la hora de publicar a prod y por defecto esta carpeta esta siendo expuesta por vite
+
