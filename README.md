@@ -94,3 +94,48 @@ Curso de Vite.js
   - Vite.js nos permite Web Assembly importando los archivo e invocándolo de una cierta manera para que se ejecute
       - Si requiere inyectar alguna dependencia te permite realizarlo
       - Vite te facilita el uso a diferencia de vanilla JS
+
+## ¿Cómo instalar Vite?
+  [Repo CViteJS](https://github.com/platzi/curso-vite)
+
+  Recomendado:
+  ```
+  node -v
+  v16.16.0
+
+  npm -v
+  6.13.3
+  ```  
+  Comando instalar:
+  ```
+  npm create vite@latest
+  ```
+  Configuración:
+  ```bash
+  Need to install the following packages:
+  create-vite@3.0.0
+  Ok to proceed? (y) y
+  ✔ Project name: nombre-proyecto
+  ? Select a framework: › - Use arrow-keys. Return to submit.
+  ❯ vanilla
+    vue
+    react
+    preact
+    lit
+    svelte
+  ```
+  Comandos de arranque:
+  ```bash
+  Now run:
+
+  cd cvitejs
+  npm install
+  npm run dev
+  ```
+  Server en local:
+  ```bash
+  VITE v3.0.2  ready in 153 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ```
