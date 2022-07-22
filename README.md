@@ -13,3 +13,30 @@ Curso de Vite.js
       Mayor velocidad
   - Vite.js se caracteriza por su velocidad, ya que el tiempo para compilar, transpilar es muy rápido
   - Aparte que trae una serie de optimizaciones por debajo que nos permite tener una mejor organización de proyectos sin necesidad de realizar una serie de configuraciones
+
+## Contexto histórico
+  [StackBlitz](https://stackblitz.com/) es un IDE (entorno de desarrollo integrado) en línea donde puede crear proyectos Angular, React y Vue rápida y fácilmente en su navegador. Se encarga automáticamente de instalar dependencias, compilar, agrupar, recargar en caliente mientras escribe y mucho más. 
+
+  **IIFE**
+
+  Viene de expresión de función ejecutada inmediatamente. Son funciones que se ejecutan tan pronto como se definen
+
+  **Minificación**
+
+  Es el proceso de eliminar todos los caracteres innecesarios del código fuente de lenguajes de programación interpretados o lenguajes de marcado sin cambiar su funcionalidad.
+
+  **Bundling**
+
+  Es un proceso donde se toma varios archivos y se unifican en uno solo aparte que puede estar minificado.
+
+  **Motor de templates**
+
+  Es una herramienta que te permite tomar archivos y tratarlos con JavaScript para obtener un resultado como un archivo.
+
+  **Transpilación**
+
+  Es convertir los archivos iniciales de un proyecto a archivos distintos para producción distintos de los originales.
+
+  **TypeScript**
+
+  Es un superconjunto de JavaScript, que esencialmente añade tipos estáticos y objetos basados en clases
