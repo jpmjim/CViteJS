@@ -195,3 +195,36 @@ Curso de Vite.js
     npm install sass-loader node-sass
     ```
   Pre procesadores son plugins que se ejecutan antes de que Vite procese el CSS.
+
+## CSS Modules
+  Una manera de usarlo en React es:
+  CSS o SCSS Modules
+
+  - El objetivo de esto es conseguir que el CSS que declaremos sea relativo y único hacia el componente que lo estamos importando.
+
+  - ¿Cómo hacer que una clase de CSS sea única, dándole un nombre único y diferente? se consigue con modules CSS que apoyado en un bundle permite generar un identificador único para cada clase del CSS
+
+  A nuestros archivos de CSS debemos agregarle un **.module.css**
+  ```
+  NombreComponente.module.css
+  ```
+  Sin embargo también la manera de importarlos y usarlos en nuestro componentes sera diferente:
+  ```javascript
+  import style from './NombreComponente.module.css'
+
+  function NombreComponente({ todos }) {
+    return (
+      <div className={stlye.container}>
+        <p>Content</p>
+      </div>
+    );
+  }
+
+  export { NombreComponente};
+  ```
+  Si queremos usar más dos clases para una solo etiqueta podemos usar template Strings o template literals, respetando el espacio en medio que tienen dichas clases.
+  ```javascript
+  div className={`${stlye.container} ${stlye.margin}`}>
+  ```
+  No olvidemos usar el normalize o un reset de CSS ya que todos los navegadores tienen diferentes márgenes por lo cual nuestro CSS pueden llegar a colapsar.
+

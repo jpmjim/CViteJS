@@ -1,6 +1,9 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
+import buttonModule from './button.module.css'
+
+console.log(buttonModule)
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -17,7 +20,12 @@ document.querySelector('#app').innerHTML = `
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
+    <button id="btn">
+      Click!
+    </button>
   </div>
 `
+
+document.getElementById('btn').className = buttonModule.btn
 
 setupCounter(document.querySelector('#counter'))
