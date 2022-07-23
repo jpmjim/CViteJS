@@ -5,7 +5,13 @@ import buttonModule from './button.module.css'
 import img from './one_piece.png'
 import data from './data.json'
 
-
+const modules = import.meta.glob('./modules/*.js')
+console.log(modules)
+for (const path in modules) {
+  modules[path]().then((module) => {
+    module.load()
+  })
+}
 console.log(buttonModule)
 
 document.querySelector('#app').innerHTML = `

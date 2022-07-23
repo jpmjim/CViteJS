@@ -248,3 +248,24 @@ Curso de Vite.js
   ```
 
   Ejecutamos nuestro proyecto para producción el cual nos genera la carpeta dist que contiene los archivos que necesitamos para producción.
+
+## [Importación global](https://vitejs.dev/guide/features.html#glob-import)
+  Vite supports importing multiple modules from the file system via the special **import.meta.glob**.
+  
+  Aqui el ejemplo de la clase trabajado con async await:
+  ```javascript
+  const modules = import.meta.glob('./modules/*.js');
+
+  for(const path in modules){
+    async function fetchModule(){
+      const module = await modules[path]();
+      module.load();
+    }
+    fetchModule();
+    // modules[path]().then((module)=>{
+    //   module.load();
+    // })
+  }
+
+  console.info(modules);
+  ```
