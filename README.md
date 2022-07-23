@@ -174,3 +174,16 @@ Curso de Vite.js
   - El svg que se menciona en el curso se encuentra en la carpeta public
   - Esta carpeta public sirve para obtener cualquier archivo disponible a la hora de publicar a prod y por defecto esta carpeta esta siendo expuesta por vite
 
+## Importar CSS
+  - Podemos importar usando
+    ```
+    @import './style.css';4
+    ```
+  - Como los archivos están quedando en el cache del servidor es posible que al inspeccionar podamos ver ambas versiones, pero como queda asociado por la variable de timestamp los cambios se pueden ver y no genera conflictos.
+  ![](https://static.platzi.com/media/user_upload/Captura%20de%20Pantalla%202022-07-09%20a%20la%28s%29%201.26.55%20p.%C2%A0m.-0475539c-a824-4c65-a678-758be95ba233.jpg)
+
+
+  - Cuando tenemos imports entre archivos.
+    - Vite puede inyectar un archivo dentro de otro y subir uno solo al navegador
+    - Vite determina que uno de ellos es muy grande y los envía separados
+  - Si queremos borrar los archivos anteriores debemos forzar el limpiado de la cache (Creo que esto puede ser bastante tedioso)
