@@ -187,3 +187,11 @@ Curso de Vite.js
     - Vite puede inyectar un archivo dentro de otro y subir uno solo al navegador
     - Vite determina que uno de ellos es muy grande y los envía separados
   - Si queremos borrar los archivos anteriores debemos forzar el limpiado de la cache (Creo que esto puede ser bastante tedioso)
+
+## Pre-procesadores CSS
+  Sass es un pre-procesador de CSS que nos permite trabajar con archivos sass y convertirlos a CSS para que Vite pueda trabajar con ellos.
+  - Para instalarlo:
+    ```bash
+    npm install sass-loader node-sass
+    ```
+  Pre procesadores son plugins que se ejecutan antes de que Vite procese el CSS.
