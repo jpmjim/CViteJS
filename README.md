@@ -228,3 +228,12 @@ Curso de Vite.js
   ```
   No olvidemos usar el normalize o un reset de CSS ya que todos los navegadores tienen diferentes márgenes por lo cual nuestro CSS pueden llegar a colapsar.
 
+## Importar imágenes
+  Podemos importar nuestra imagenes usando
+  ```javascript
+  import img from "./example-img.png"
+
+  // inside templates
+  <img src="${img}">
+  ```
+

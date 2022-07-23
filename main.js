@@ -2,6 +2,7 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import buttonModule from './button.module.css'
+import img from './one_piece.png'
 
 console.log(buttonModule)
 
@@ -23,6 +24,7 @@ document.querySelector('#app').innerHTML = `
     <button id="btn">
       Click!
     </button>
+    <img src="${img}" alt="One Piece" class="one-piece"/>
   </div>
 `
 
