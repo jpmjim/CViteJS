@@ -3,6 +3,8 @@ import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
 import buttonModule from './button.module.css'
 import img from './one_piece.png'
+import data from './data.json'
+
 
 console.log(buttonModule)
 
@@ -26,6 +28,10 @@ document.querySelector('#app').innerHTML = `
     </button>
     <img src="${img}" alt="One Piece" class="one-piece"/>
   </div>
+
+  <pre>${JSON.stringify(data)}</pre>
+  <pre>${JSON.stringify(data.user)}</pre>
+
 `
 
 document.getElementById('btn').className = buttonModule.btn

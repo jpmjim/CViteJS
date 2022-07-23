@@ -237,3 +237,14 @@ Curso de Vite.js
   <img src="${img}">
   ```
 
+## Importar [JSON](https://vitejs.dev/guide/features.html#json)
+  Podemos importar nuestros archivos JSON usando
+  ```javascript
+  import data from "./data.json"
+  ```
+  Podemos acceder a los datos del archivo JSON usando
+  ```javascript
+  data.name
+  ```
+
+  Ejecutamos nuestro proyecto para producción el cual nos genera la carpeta dist que contiene los archivos que necesitamos para producción.
