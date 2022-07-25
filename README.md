@@ -371,3 +371,6 @@ Curso de Vite.js
   - Uso de pluggins.
   - El servidor en modo desarrollo
   - El build
+
+## [Variables de entorno](https://vitejs.dev/guide/env-and-mode.html) y modos
+  Una variable de entorno es una variable dinámica que puede afectar al comportamiento de los procesos en ejecución en un ordenador. Son parte del entorno en el que se ejecuta un proceso.
