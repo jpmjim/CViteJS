@@ -272,3 +272,102 @@ Curso de Vite.js
 
 ## Uso con [TypeScript en Vite](https://vitejs.dev/guide/features.html#typescript)
   [TypeScript](https://www.typescriptlang.org/) es un lenguaje de programación que se utiliza para escribir código en JavaScript.
+
+## Vite Config
+  [Configuring Vite](https://vitejs.dev/config/) es una buena práctica para configurar Vite.
+
+  En caso de que quieran utilizar TS en React, no olviden descargar: @types/node
+  ```bash
+  npm install @types/node
+  ```
+  Y también actualizar su archivo tsconfig.json
+  ```javascript
+  {
+    "compilerOptions": {
+      // "baseUrl": "src",
+      "target": "ESNext",
+      "useDefineForClassFields": true,
+      "lib": [
+        "DOM",
+        "DOM.Iterable",
+        "ESNext"
+      ],
+      "allowJs": false,
+      "skipLibCheck": true,
+      "esModuleInterop": false,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "types": [
+        "node"
+      ],
+      "paths": {
+        "@*": [
+          "./src/*"
+        ],
+        "assets/*": [
+          "./src/assets/*"
+        ],
+        "components/*": [
+          "./src/components/*"
+        ],
+        "hooks/*": [
+          "./src/hooks/*"
+        ],
+        "pages/*": [
+          "./src/pages/*"
+        ],
+        "styles/*": [
+          "./src/styles/*"
+        ],
+        "utils/*": [
+          "./src/utils/*"
+        ]
+      }
+    },
+    "include": [
+      "src"
+    ],
+    "references": [
+      {
+        "path": "./tsconfig.node.json"
+      }
+    ],
+  }
+  ```
+  con los paths que agregaron en vite.config.ts
+  ```javascript
+  import * as path from 'path'
+  import { defineConfig } from 'vite'
+  import react from '@vitejs/plugin-react'
+
+  export default defineConfig({
+    plugins: [react()],
+    resolve: {
+      alias: [
+        { find: '@', replacement: path.resolve(__dirname, 'src/') },
+        { find: '@assets', replacement: path.resolve(__dirname, 'src/assets') },
+        { find: '@components', replacement: path.resolve(__dirname, 'src/components') },
+        { find: '@hooks', replacement: path.resolve(__dirname, 'src/hooks') },
+        { find: '@pages', replacement: path.resolve(__dirname, 'src/pages') },
+        { find: '@styles', replacement: path.resolve(__dirname, 'src/styles') },
+        { find: '@utils', replacement: path.resolve(__dirname, 'src/utils') },
+      ],
+    },
+  })
+  ```
+  Vite viene configurado para que no tengas que hacerlo tu pero puedes configurar de forma manual.
+  Podemos configurar en modo producción o desarrollo.
+
+  - La carpeta raíz del proyecto.
+  - La url base
+  - El modo ( desarrollo o producción)
+  - Uso de pluggins.
+  - El servidor en modo desarrollo
+  - El build
