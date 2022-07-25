@@ -4,6 +4,9 @@ import { setupCounter } from './counter.js'
 import buttonModule from './button.module.css'
 import img from './one_piece.png'
 import data from './data.json'
+import suma from './suma.ts'
+
+console.log(`suma 2+3 = ${suma(2, 3)}`)
 
 const modules = import.meta.glob('./modules/*.js')
 console.log(modules)

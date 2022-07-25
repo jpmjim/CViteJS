@@ -269,3 +269,6 @@ Curso de Vite.js
 
   console.info(modules);
   ```
+
+## Uso con [TypeScript en Vite](https://vitejs.dev/guide/features.html#typescript)
+  [TypeScript](https://www.typescriptlang.org/) es un lenguaje de programación que se utiliza para escribir código en JavaScript.
