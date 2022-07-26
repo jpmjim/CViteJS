@@ -388,3 +388,29 @@ Curso de Vite.js
 
 ## Construir librerías
   Configurar Vite para que pueda construir librerías.
+
+## Soporte para React
+  Vite tiene un plugin para soportar React.
+  [Vite Plugins](hhttps://vitejs.dev/plugins/#official-plugins)
+  
+  Creamos un nuevo proyecto usando React.
+  ```bash
+  npm create vite@latest
+  ```
+
+  ```
+  npm create vite@latest
+  ✔ Project name: … vite-react
+  ✔ Select a framework: › react
+  ✔ Select a variant: › react
+
+  Done. Now run:
+
+  cd vite-react
+  npm install
+  npm run dev
+
+  ```
+  [Soporte a diferentes frameworks](https://github.com/vitejs/awesome-vite#templates)
+
+  [Svelte](https://kit.svelte.dev/docs/project-structure)
