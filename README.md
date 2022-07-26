@@ -374,3 +374,14 @@ Curso de Vite.js
 
 ## [Variables de entorno](https://vitejs.dev/guide/env-and-mode.html) y modos
   Una variable de entorno es una variable dinámica que puede afectar al comportamiento de los procesos en ejecución en un ordenador. Son parte del entorno en el que se ejecuta un proceso.
+
+## Sitios multi-página
+  Trabajamos con los comandos de dev y build en el modo que se encuentra en el proyecto.
+
+  Se pueden generar sitios de multi páginas de inicio, normalmente en un proyecto el archivo principal es el index sin embargo hay proyectos donde se puede llegar a usar otro punto de entrada o un segundo sitio, que no se comporte como una página aparte principal si no como una página independiente.
+
+  Para esto debemos hacer uso de la configuración de Rollup y Vite.
+  
+  Recordemos que el archivo de Config de Vite es para poder tomar el control del mismo
+
+  Vite esta pensando en una tendencia que esta creciendo a día de hoy que es MicroFrameworks, es decir que todos los Frameworks se puedan integrar
