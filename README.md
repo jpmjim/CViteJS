@@ -385,3 +385,6 @@ Curso de Vite.js
   Recordemos que el archivo de Config de Vite es para poder tomar el control del mismo
 
   Vite esta pensando en una tendencia que esta creciendo a día de hoy que es MicroFrameworks, es decir que todos los Frameworks se puedan integrar
+
+## Construir librerías
+  Configurar Vite para que pueda construir librerías.
