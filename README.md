@@ -414,3 +414,5 @@ Curso de Vite.js
   [Soporte a diferentes frameworks](https://github.com/vitejs/awesome-vite#templates)
 
   [Svelte](https://kit.svelte.dev/docs/project-structure)
+
+  integre with nestjs
